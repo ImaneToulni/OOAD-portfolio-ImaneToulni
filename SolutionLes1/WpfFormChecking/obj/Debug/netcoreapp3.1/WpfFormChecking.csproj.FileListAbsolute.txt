@@ -1,0 +1,17 @@
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\bin\Debug\netcoreapp3.1\WpfFormChecking.exe
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\bin\Debug\netcoreapp3.1\WpfFormChecking.deps.json
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\bin\Debug\netcoreapp3.1\WpfFormChecking.runtimeconfig.json
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\bin\Debug\netcoreapp3.1\WpfFormChecking.runtimeconfig.dev.json
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\bin\Debug\netcoreapp3.1\WpfFormChecking.dll
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\bin\Debug\netcoreapp3.1\WpfFormChecking.pdb
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\WpfFormChecking.csprojAssemblyReference.cache
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\WpfFormChecking_MarkupCompile.cache
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\WpfFormChecking_MarkupCompile.lref
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\WpfFormChecking.g.resources
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\WpfFormChecking.AssemblyInfoInputs.cache
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\WpfFormChecking.AssemblyInfo.cs
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\WpfFormChecking.dll
+C:\Users\Imane\source\repos\SolutionLes1\WpfFormChecking\obj\Debug\netcoreapp3.1\WpfFormChecking.pdb

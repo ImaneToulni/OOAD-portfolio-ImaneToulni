@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfFormChecking.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFormChecking"
+        mc:Ignorable="d"
+        Title="Registratie formulier" Height="450" Width="800">
+    <Grid x:Name="Formulier">
+        <Label Content="REGISTRATIEFORMULIER" HorizontalAlignment="Left" Margin="32,19,0,0" VerticalAlignment="Top"/>
+        <Label Content="Naam:" HorizontalAlignment="Left" Margin="32,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="32,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rijkregister nr:" HorizontalAlignment="Left" Margin="32,154,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.394,-2.271"/>
+        <Label Content="BTW nr:" HorizontalAlignment="Left" Margin="32,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.394,-2.271"/>
+        <Label Content="Geboortedatum:" HorizontalAlignment="Left" Margin="32,228,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.394,-2.271"/>
+        <Label Content="Geslacht:" HorizontalAlignment="Left" Margin="32,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.394,-2.271"/>
+        <Label Content="Interesse:" HorizontalAlignment="Left" Margin="32,299,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.394,-2.271"/>
+        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Margin="215,83,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Height="25"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="215,117,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="25"/>
+        <TextBox x:Name="txtRijkregisterNr" HorizontalAlignment="Left" Margin="216,155,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="25"/>
+        <TextBox x:Name="txtBtw" HorizontalAlignment="Left" Margin="216,194,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Height="26"/>
+        <TextBox x:Name="txtGeboortedatum" HorizontalAlignment="Left" Margin="217,234,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Height="25"/>
+        <RadioButton x:Name="rBtnMan" Content="Man" HorizontalAlignment="Left" Height="18" Margin="216,269,0,0" VerticalAlignment="Top" Width="108"/>
+        <RadioButton x:Name="rBtnVrouw" Content="Vrouw" HorizontalAlignment="Center" Height="18" Margin="0,270,0,0" VerticalAlignment="Top" Width="108"/>
+        <CheckBox x:Name="checkboxProgrammeren" Content="Programmeren" HorizontalAlignment="Left" Margin="214,295,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkboxNetwerken" Content="Netwerken" HorizontalAlignment="Left" Margin="214,318,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkboxBusiness" Content="Business" HorizontalAlignment="Left" Margin="214,341,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnVerwijderen" Content="VERWIJDEREN" HorizontalAlignment="Left" Margin="560,365,0,0" VerticalAlignment="Top" Height="27" Width="92" Click="btnVerwijderen_Click" />
+        <Button x:Name="btnRegistreren" Content="REGISTREREN" HorizontalAlignment="Left" Margin="667,363,0,0" VerticalAlignment="Top" Height="27" Width="92" Click="btnRegistreren_Click_1" />
+        <Label x:Name="lblMessageName" Content="" HorizontalAlignment="Left" Height="25" Margin="504,84,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="lblMessageMail" Content="" HorizontalAlignment="Left" Height="26" Margin="504,116,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="lblMessageRijkregisterNr" Content="" HorizontalAlignment="Left" Height="26" Margin="504,156,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="lblMessageBtw" Content="" HorizontalAlignment="Left" Height="26" Margin="504,198,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="lblMessageGeboortedatum" Content="" HorizontalAlignment="Left" Height="26" Margin="502,234,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="lblMessageGeslacht" Content="" HorizontalAlignment="Left" Height="26" Margin="504,276,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="lblMessageInteresse" Content="" HorizontalAlignment="Left" Height="26" Margin="504,315,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="lblAantalFouten" Content="" HorizontalAlignment="Left" Margin="321,364,0,0" VerticalAlignment="Top" Width="218"/>
+
+    </Grid>
+</Window>
