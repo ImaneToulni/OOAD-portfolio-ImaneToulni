@@ -12,30 +12,23 @@
         <Button x:Name="btnReset" Content="RESET" HorizontalAlignment="Left" Margin="145,244,0,0" VerticalAlignment="Top" Height="50" Width="160" Click="btnReset_Click"/>
 
         <!-- kleuren instellen voor de vierkant via properties + verticalAlignment op Bottom zetten ipv Top + Height op 0 instellen-->
-        <Rectangle x:Name="rectangleMin" HorizontalAlignment="Left" Height="0" Margin="354,0,0,108" VerticalAlignment="Bottom" Width="140" RenderTransformOrigin="0.5,0.5">
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.8,0" StartPoint="0.0,0">
-                    <GradientStop Color="#FFBCEEB9" Offset="0.0"/>
-                    <GradientStop Color="#FFB2E76C" Offset="0.20"/>
-                    <GradientStop Color="#FFEBEE72" Offset="0.40"/>
-                    <GradientStop Color="#FFF1D576" Offset="0.60"/>
-                    <GradientStop Color="#FFE9B042" Offset="0.80"/>
-                    <GradientStop Color="#FFEC987C" Offset="1.0"/>
-                    <GradientStop Color="#FFF2724C" Offset="1.20"/>
-                    <GradientStop Color="#FFF13F23" Offset="1.40"/>
-                    <GradientStop Color="#FFF91F0A" Offset="1.60"/>
+        <Rectangle x:Name="rectangleMin" HorizontalAlignment="Left" Height="1" Margin="354,0,0,108" VerticalAlignment="Bottom" Width="140" RenderTransformOrigin="0.5,0.5" Stroke="#FF0D0C0C">
+            <!--<Rectangle.Fill>
+                <LinearGradientBrush  EndPoint="0.8,0" StartPoint="0.0,0">
+                    <GradientStop Color="#FFBCEEB9" Offset="0.0"/>  --><!-- groen --><!--
+                    <GradientStop Color="#FFF91F0A" Offset="1.60"/> --><!-- rood --><!--
                 </LinearGradientBrush>
-            </Rectangle.Fill>
-            <Rectangle.RenderTransform>
+            </Rectangle.Fill>-->
+            <!--<Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
                     <SkewTransform/>
                     <RotateTransform/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </Rectangle.RenderTransform>
+            </Rectangle.RenderTransform>-->
         </Rectangle>
-        <Rectangle x:Name="rectangleSec" HorizontalAlignment="Left" Height="0.0" Margin="518,0,0,107" VerticalAlignment="Bottom" Width="140"/>
+        <Rectangle x:Name="rectangleSec" HorizontalAlignment="Left" Height="1" Margin="518,0,0,107" VerticalAlignment="Bottom" Width="140" Stroke="#FF0A0909"/>
         <Label x:Name="lblMinutenEnSeconden" Content="" HorizontalAlignment="Left" Height="45" Margin="501,31,0,0" VerticalAlignment="Top" Width="140"/>
 
     </Grid>
