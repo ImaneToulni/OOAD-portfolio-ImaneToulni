@@ -1,0 +1,17 @@
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\bin\Debug\netcoreapp3.1\WpfCarConfigurator.exe
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\bin\Debug\netcoreapp3.1\WpfCarConfigurator.deps.json
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\bin\Debug\netcoreapp3.1\WpfCarConfigurator.runtimeconfig.json
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\bin\Debug\netcoreapp3.1\WpfCarConfigurator.runtimeconfig.dev.json
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\bin\Debug\netcoreapp3.1\WpfCarConfigurator.dll
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\bin\Debug\netcoreapp3.1\WpfCarConfigurator.pdb
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\WpfCarConfigurator.csprojAssemblyReference.cache
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\WpfCarConfigurator_MarkupCompile.cache
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\WpfCarConfigurator_MarkupCompile.lref
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\WpfCarConfigurator.g.resources
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\WpfCarConfigurator.AssemblyInfoInputs.cache
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\WpfCarConfigurator.AssemblyInfo.cs
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\WpfCarConfigurator.dll
+C:\Users\Imane\source\repos\SolutionLes3\WpfCarConfigurator\obj\Debug\netcoreapp3.1\WpfCarConfigurator.pdb
