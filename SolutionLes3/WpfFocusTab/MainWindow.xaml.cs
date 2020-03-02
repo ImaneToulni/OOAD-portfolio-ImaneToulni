@@ -30,20 +30,21 @@ namespace WpfFocusTab
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)
         {
             // groene kleur meegeven als het tab toets erop zit
-            TextBox tb = sender as TextBox;
-            if (tb != null)
-            {
-                tb.Background = Color.Green;
-            }
+            var ctrl = sender as Control;
+            ctrl.Tag = ctrl.Background;
+            ctrl.Background = Brushes.Green;
+
+
         }
 
         private void TextBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            // geen focus => witte kleur
+            // kleur kan ook zo gedefinieerd worden
+            //geen focus => witte kleur
             TextBox tb = sender as TextBox;
             if (tb != null)
             {
-                tb.Background = Color.White;
+                tb.Background = Brushes.White;
             }
         }
     }
