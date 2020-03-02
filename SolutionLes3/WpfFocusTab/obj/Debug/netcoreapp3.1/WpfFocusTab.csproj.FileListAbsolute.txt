@@ -1,0 +1,17 @@
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\bin\Debug\netcoreapp3.1\WpfFocusTab.exe
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\bin\Debug\netcoreapp3.1\WpfFocusTab.deps.json
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\bin\Debug\netcoreapp3.1\WpfFocusTab.runtimeconfig.json
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\bin\Debug\netcoreapp3.1\WpfFocusTab.runtimeconfig.dev.json
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\bin\Debug\netcoreapp3.1\WpfFocusTab.dll
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\bin\Debug\netcoreapp3.1\WpfFocusTab.pdb
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\WpfFocusTab.csprojAssemblyReference.cache
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\WpfFocusTab_MarkupCompile.cache
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\WpfFocusTab_MarkupCompile.lref
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\WpfFocusTab.g.resources
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\WpfFocusTab.AssemblyInfoInputs.cache
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\WpfFocusTab.AssemblyInfo.cs
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\WpfFocusTab.dll
+C:\Users\Imane\source\repos\SolutionLes3\WpfFocusTab\obj\Debug\netcoreapp3.1\WpfFocusTab.pdb

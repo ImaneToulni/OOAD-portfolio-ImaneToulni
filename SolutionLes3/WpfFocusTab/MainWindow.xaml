@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfFocusTab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFocusTab"
+        mc:Ignorable="d"
+        Title="Focus en Tab" Height="450" Width="700">
+    <!-- naam wijzigen -->
+
+    <Grid  Margin="40">
+        <Grid.ColumnDefinitions>            <ColumnDefinition Width="*" /> <!-- op * zetten zodat het automatisch zal gaat aanpassen-->            <ColumnDefinition Width="*" />        </Grid.ColumnDefinitions>        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />        </Grid.RowDefinitions>                <!-- stackpanel => automatisch horizontaal, rij en kolom niet specifieren-->        <StackPanel> <!-- positie automatisch op 0-->            <Label>Voornaam</Label>            <TextBox TabIndex="0" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus"></TextBox>            <Label>Straat</Label>            <TextBox TabIndex="2" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus">></TextBox>            <Label>Postcode</Label>            <TextBox TabIndex="4" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus">></TextBox>        </StackPanel>        <StackPanel Grid.Column="1"  Margin="10,0,0,0"> <!-- positie definieren om het naast elkaar te krijgen ipv op elkaar-->            <Label> Achternaam</Label>            <TextBox TabIndex="1" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus">></TextBox>                        <!-- stack nummer en bus -->            <StackPanel Orientation="Horizontal"> <!-- horizontaal om ze niet meer onder elkaar te hebben-->                <StackPanel>                    <Label>Nummer</Label>                    <TextBox TabIndex="3" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus">></TextBox>                </StackPanel>                <StackPanel Margin="20,0,0,0">                    <Label>Bus</Label>                    <TextBox IsTabStop="False"></TextBox>                </StackPanel>            </StackPanel>            <Label>Stad</Label>            <TextBox TabIndex="5" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus"></TextBox>        </StackPanel>
+    </Grid>
+</Window>
