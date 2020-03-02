@@ -1,0 +1,17 @@
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\bin\Debug\netcoreapp3.1\WpfFileInfo.exe
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\bin\Debug\netcoreapp3.1\WpfFileInfo.deps.json
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\bin\Debug\netcoreapp3.1\WpfFileInfo.runtimeconfig.json
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\bin\Debug\netcoreapp3.1\WpfFileInfo.runtimeconfig.dev.json
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\bin\Debug\netcoreapp3.1\WpfFileInfo.dll
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\bin\Debug\netcoreapp3.1\WpfFileInfo.pdb
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\WpfFileInfo.csprojAssemblyReference.cache
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\WpfFileInfo_MarkupCompile.cache
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\WpfFileInfo_MarkupCompile.lref
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\WpfFileInfo.g.resources
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\WpfFileInfo.AssemblyInfoInputs.cache
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\WpfFileInfo.AssemblyInfo.cs
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\WpfFileInfo.dll
+C:\Users\Imane\source\repos\SolutionLes2\WpfFileInfo\obj\Debug\netcoreapp3.1\WpfFileInfo.pdb
