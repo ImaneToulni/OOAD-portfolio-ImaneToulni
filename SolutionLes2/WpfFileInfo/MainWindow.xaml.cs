@@ -1,19 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using Microsoft.Win32; // om geen error te hebben met OpenFileDialog
+using System;
 using System.IO; // om geen error te hebben met StreamReader
-using Microsoft.Win32; // om geen error te hebben met OpenFileDialog
+using System.Windows;
 
 namespace WpfFileInfo
 {
@@ -22,6 +10,7 @@ namespace WpfFileInfo
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -34,7 +23,8 @@ namespace WpfFileInfo
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             dialog.Filter = "Tekstbestanden|*.TXT;*.TEXT";
-            bool? dialogResult = dialog.ShowDialog(); // bool? heeft nullable bool als returntype
+            bool? dialogResult = dialog.ShowDialog(); // bool? heeft nullable bool als returntype (bevestigs, geannuleerd nog steeds open)
+            
             if (dialogResult == true)
             {
                 // user picked a file and pressed OK
@@ -49,7 +39,31 @@ namespace WpfFileInfo
                 info += $"mapnaam: {fi.Directory.Name}{Environment.NewLine}";
 
 
+                // berekening aantal woorden
+                StreamReader sr = new StreamReader(chosenFileName);
+
+                int counter = 0;
+                string delim = "' ' , ."; //maybe some more delimiters like ?! and so on
+                string[] fields = null;
+                string line = null;
+
+                while (!sr.EndOfStream)
+                {
+                    line = sr.ReadLine();//each time you read a line you should split it into the words
+                    line.Trim();
+                    fields = line.Split(delim.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                    counter += fields.Length; //and just add how many of them there is
+                }
+
+                sr.Close();
+                info += $"aantal woorden: {counter}{Environment.NewLine}";
+
+
+                // meest voorkomende woorden
+                // nog niet klaar => join nodig 
+                
                 lblInfoBestand.Content = info; // info eerst declareren en dan tonen
+
             }
         }
 
