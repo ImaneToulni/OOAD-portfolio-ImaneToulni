@@ -15,7 +15,7 @@
         <Label  Content="Filter op" HorizontalAlignment="Left" Margin="164,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.836,-0.393"/>
         <TextBox x:Name="txtFilter" HorizontalAlignment="Left" Margin="286,144,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="334" Height="26" TextChanged="txtFilter_TextChanged"/>
         <Button x:Name="btnVerwijderen" Content="Verwijder" HorizontalAlignment="Left" Height="21" Margin="164,346,0,0" VerticalAlignment="Top" Width="458" Click="btnVerwijderen_Click"/>
-        <ListBox x:Name="lstbx" Margin="162,188,180,103"/>
+        <ListBox x:Name="lstbx" Margin="162,188,180,103" SelectionMode="Multiple"/> <!-- mode op multiple zetten-->
 
     </Grid>
 </Window>

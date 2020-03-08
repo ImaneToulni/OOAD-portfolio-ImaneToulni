@@ -20,18 +20,17 @@ namespace WpfPunten
     /// <summary>
     /// Auteur: Imane Toulni
     /// Datum: week 1 - 10/02/2020
-    /// Omschriijving: Puntenscore in een lijstje kunnen toevoegen en verwijderen
+    /// Omschrijving: Puntenscore in een lijstje kunnen toevoegen en verwijderen
     /// </summary>
     
     public partial class MainWindow : Window
     {
-        //private dictrionary string 
-        //Dictionary<int, string> dict = new Dictionary<int, string>();
+
+        //kan ook in een dictionarry gemaakt worden
 
         public MainWindow()
         {
             InitializeComponent();
-            // marks
         }
 
         //*********************************************************************************************************************************************
@@ -53,11 +52,11 @@ namespace WpfPunten
         {
             // items telkens toevoegen in een listboxlist
             // om problemen te voorkomen 
-            //ListBoxItem item = new ListBoxItem();
-            //item.Content = (txtNaam.Text + " - " + txtPunten.Text + " /100");
 
-            lstbx.Items.Add(txtNaam.Text + " - " + txtPunten.Text + " /100");
 
+            ListBoxItem resultaat = new ListBoxItem();
+            resultaat.Content = txtNaam.Text + " - " + txtPunten.Text + " /100".ToString();
+            lstbx.Items.Add(resultaat);
 
             // input verwijderen wanneer naam en punten toegevoegd wordt, zodat men direct een tweede naam en punt kan invoeren
             txtNaam.Clear();
@@ -70,21 +69,18 @@ namespace WpfPunten
         //                                                  ****   FILTER    ******
         private void txtFilter_TextChanged(object sender, TextChangedEventArgs e)
         {
-                foreach (ListBoxItem item in lstbx.Items)
+            foreach (ListBoxItem resultaat in lstbx.Items)
+            {
+                string content = Convert.ToString(resultaat.Content).ToLower(); // omzetten naar kleine letters dmv ToLower();
+                if (content.Contains(txtFilter.Text.ToLower()))
                 {
-                    string content = Convert.ToString(item.Content).ToLower(); // omzetten naar kleine letters dmv ToLower();
-                    if (content.Contains(txtFilter.Text.ToLower()))
-                    {
-                    item.Background = Brushes.LightCoral;
-                    }
-                    else
-                    {
-                    item.Background = Brushes.White;
-                    }
+                    resultaat.Background = Brushes.LightCoral;
                 }
-            // private void DoFilter();
+                else
+                {
+                    resultaat.Background = Brushes.White;
+                }
+            }
         }
-
-
     }
 }
