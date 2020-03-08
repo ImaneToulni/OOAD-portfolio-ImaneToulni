@@ -19,13 +19,13 @@ namespace WpfTimer
     /// <summary>
     /// Auteur: Imane Toulni
     /// Datum: week 1 - 10/02/2020
-    /// Omschriijving: timer oefening (min en seconden)
+    /// Omschrijving: timer oefening (min en seconden)
     /// </summary>
     
     public partial class MainWindow : Window
     {
         private DispatcherTimer timer = new DispatcherTimer(); // DispatcherTimer is een klasse die gebruikt maak van Tick
-        private int count = 0; // standaard op nul zetten
+        private int count = 0; // standaard seconden op nul zetten
         int minuten = 0;
 
         public MainWindow()
@@ -51,7 +51,7 @@ namespace WpfTimer
             }
 
             // basic if-statement om kleuren te veranderen van de rechthoek 
-            if (count <= 3) // onder 30 sec (1/2 van 6 = 3) moet het groen zijn
+            if (count <= 4) // onder 30 sec (1/2 van 6 = 3) moet het groen zijn
             {
                 // groene kleur meegeven 
                 SolidColorBrush groeneKleur = new SolidColorBrush();
@@ -102,13 +102,14 @@ namespace WpfTimer
         // RESET min en seconden 
         private void btnReset_Click(object sender, RoutedEventArgs e)
         {
-            lblMinutenEnSeconden.Content = 0;  // na reset moet het vanaf nul starten 
-            rectangleMin.Height = 0;           // rechtehoeken moeten ook gereset worden
-            rectangleSec.Height = 0;
 
             // ervoor zorgen datde timer terug op 0 staat 
             count = 0;
             minuten = 0;
+            lblMinutenEnSeconden.Content = 0;  // na reset moet het vanaf nul starten 
+
+            rectangleMin.Height = 0;           // rechtehoeken moeten ook gereset worden
+            rectangleSec.Height = 0;
 
             btnStart.IsEnabled = true;
             btnStop.IsEnabled = true;
