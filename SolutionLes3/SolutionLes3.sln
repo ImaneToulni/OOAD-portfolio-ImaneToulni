@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfFocusTab", "WpfFocusTab\WpfFocusTab.csproj", "{8C28B9A9-1A39-4383-B773-9022C7A86484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCarConfigurator", "WpfCarConfigurator\WpfCarConfigurator.csproj", "{9427A3DD-E8B5-4D96-A049-6E709720764B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCarConfigurator", "WpfCarConfigurator\WpfCarConfigurator.csproj", "{9427A3DD-E8B5-4D96-A049-6E709720764B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfNotePad", "WpfNotePad\WpfNotePad.csproj", "{DE044D5E-2BCB-42F1-9D0F-50BDEB07AC46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9427A3DD-E8B5-4D96-A049-6E709720764B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9427A3DD-E8B5-4D96-A049-6E709720764B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9427A3DD-E8B5-4D96-A049-6E709720764B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE044D5E-2BCB-42F1-9D0F-50BDEB07AC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE044D5E-2BCB-42F1-9D0F-50BDEB07AC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE044D5E-2BCB-42F1-9D0F-50BDEB07AC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE044D5E-2BCB-42F1-9D0F-50BDEB07AC46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

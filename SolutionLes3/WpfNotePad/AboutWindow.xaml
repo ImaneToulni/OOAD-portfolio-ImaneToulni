@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfNotePad.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNotePad"
+        mc:Ignorable="d"
+        Title="About WPF Notepad" Height="300" Width="400">
+    <Grid>
+        <StackPanel Margin="50">
+
+                <!-- image-->            <Image Source="logoOdisee.jpg" Margin="50,0,50,0"></Image>
+            <StackPanel Margin="10">
+                <Line Stretch="Fill" Stroke="Black" X2="1"/>
+                <Label HorizontalAlignment="Center">WPF NotePad 1.0</Label>
+                <Line Stretch="Fill" Stroke="Black" X2="1"/>
+            </StackPanel>
+            <StackPanel>
+                <Button x:Name="btnClose" Content="Close" Width="80" Height="auto" Margin="175,0,0,0" Click="btnClose_Click"></Button>
+            </StackPanel>        </StackPanel>
+        
+    </Grid>
+</Window>
