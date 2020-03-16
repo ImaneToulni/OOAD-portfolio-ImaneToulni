@@ -6,12 +6,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="logoOdisee.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="logoOdisee.jpg" />
-  </ItemGroup>
-
 </Project>

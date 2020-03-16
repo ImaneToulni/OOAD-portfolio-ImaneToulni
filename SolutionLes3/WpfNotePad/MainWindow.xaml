@@ -5,48 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfNotePad"
         mc:Ignorable="d"
-        Title="wpf NotePad" Height="450" Width="800">
+        Title="wpf NotePad" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <DockPanel LastChildFill="True">
             <Menu DockPanel.Dock="Top">
                 <!-- FILE TAB -->
                 <MenuItem Header="_File">
-                    <MenuItem Header="_New" />
-                    <MenuItem Header="_Open..." />
-                    <MenuItem Header="_Save" IsEnabled="False" />
-                    <MenuItem Header="Save _As..." IsEnabled="False" />
+                    <MenuItem Name="New" Header="_New" Click="MenuNew_Click" />
+                    <MenuItem Name="Open" Header="_Open..." Click="MenuOpen_Click"/>
+                    <MenuItem Name="Save" Header="_Save" Click="MenuSave_Click" />
+                    <MenuItem Name="SaveAs" Header="Save _As..." Click="menuSaveAs_Click"  />
                     <Separator />
-                    <MenuItem Header="_Exit" Click="exitItem_Click" />
+                    <MenuItem Name="ExitMenuItem" Header="_Exit" Click="menuExit_Click" />
                 </MenuItem>
 
                 <!-- EDIT TAB -->
-                <MenuItem Header="_Edit">
-                    <MenuItem Header="_Cut" IsEnabled="False"  />
-                    <MenuItem Header="_Copy" IsEnabled="False" />
-                    <MenuItem Header="_Paste" IsEnabled="False" />
+                <MenuItem Header="_Edit" >
+                    <MenuItem Name="Cut" Header="_Cut" Click="Cut_Click"  />
+                    <MenuItem Name="Copy" Header="_Copy" Click="Copy_Click" />
+                    <MenuItem Name="Paste" Header="_Paste" Click="Paste_Click" />
                 </MenuItem>
 
                 <!-- HELP TAB-->
                 <MenuItem Header="_Help">
-                    <MenuItem Header="_About" Click="MenuItem_Click"/>
+                    <MenuItem Name="About" Header="_About" />
                 </MenuItem>
             </Menu>
+            
+            
             
             <!-- bottom statusbar -->
             <StatusBar DockPanel.Dock="Bottom">
                 <Label Content="#Chars: " Padding="10,2" FontSize="10"/>
                 <Label Name="lblCharTeller" Content="0" Padding="10,2" FontSize="10" DataContextChanged="Label_DataContextChanged"/>
-
-
             </StatusBar>
             
             
                 <TabControl SelectedIndex="2" >
-                    <TabItem Header="Untitled" Margin="0" Padding="10,5">
+                    <TabItem Header="Untitled" Margin="0" Padding="10,5" Name="tabName">
 
                             <!-- pictogrammen links -->
                             <ScrollViewer VerticalScrollBarVisibility="Auto"> <!-- scrollviewer gaat automatisch verschijnen als de tekstte lang wordt-->
-                            <TextBox Name="txt1" Padding="10" TextWrapping="Wrap" TextChanged="txt1_TextChanged">
+                        <TextBox Name="txtAantalKarakters" KeyDown="txtFileContent_KeyDown" Padding="10" TextWrapping="Wrap" TextChanged="txtAantalKarakters_TextChanged">
                                 <!--Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.n tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" (De uitersten van goed en kwaad) door Cicero, geschreven in 45 v.Chr. Dit boek is een verhandeling over de theorie der ethiek, erg populair tijdens de renaissance. De eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..", komt uit een zin in sectie 1.10.32. Het standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" door Cicero zijn ook weergegeven in hun exacte originele vorm, vergezeld van engelse versies van de 1914 vertaling door H. Rackham.
                                 Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.n tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" (De uitersten van goed en kwaad) door Cicero, geschreven in 45 v.Chr. Dit boek is een verhandeling over de theorie der ethiek, erg populair tijdens de renaissance. De eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..", komt uit een zin in sectie 1.10.32. Het standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" door Cicero zijn ook weergegeven in hun exacte originele vorm, vergezeld van engelse versies van de 1914 vertaling door H. Rackham.-->
                             </TextBox>
