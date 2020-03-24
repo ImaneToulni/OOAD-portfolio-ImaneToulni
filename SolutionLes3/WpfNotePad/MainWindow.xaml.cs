@@ -32,17 +32,18 @@ namespace WpfNotePad
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
             Save.IsEnabled = false; // inactief (menu items)
             SaveAs.IsEnabled = false;
+            Paste.IsEnabled = false;
 
-            //Cut.IsEnabled = false;
-            //Copy.IsEnabled = false;
-            //Paste.IsEnabled = false;
+
+
+        }
+
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
 
         string begintext = "";
@@ -93,11 +94,16 @@ namespace WpfNotePad
             {
                 Save.IsEnabled = true; // bij wijzigingen wordt het actief 
                 SaveAs.IsEnabled = true;
+                Paste.IsEnabled = true; // is aan als clipboard een tekst bevat
+
             }
             else
             {
                 Save.IsEnabled = false; // inactief 
+                Paste.IsEnabled = false;
             }
+
+
         }
 
         //                    *** OPEN ***
@@ -110,10 +116,28 @@ namespace WpfNotePad
 
             if (dialog.ShowDialog() == true)
             {
-                huidigBestand = dialog.FileName;
-                inputStream = File.OpenText(huidigBestand);
-                txtAantalKarakters.Text = inputStream.ReadToEnd(); // bestand lezen 
+                if (MessageBox.Show("Als je nu het programma verlaat, gaan de wijzigingen verloren", "", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                {
+                    huidigBestand = dialog.FileName;
+                    inputStream = File.OpenText(huidigBestand);
+                    txtAantalKarakters.Text = inputStream.ReadToEnd(); // bestand lezen 
+                }
             }
+
+            //StreamReader inputStream;
+            //OpenFileDialog dialog = new OpenFileDialog();
+            //dialog.InitialDirectory = startMap;
+            //dialog.Filter = "Tekstbestanden|*.TXT;*.TEXT";
+
+            //if (dialog.ShowDialog() == true)
+            //{
+            //    if (MessageBox.Show("Als je nu het programma verlaat, gaan de wijzigingen verloren", "", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            //    {
+            //        huidigBestand = dialog.FileName;
+            //        inputStream = File.OpenText(huidigBestand);
+            //        txtAantalKarakters.Text = inputStream.ReadToEnd(); // bestand lezen 
+            //    }
+            //}
         }
 
 
@@ -133,6 +157,11 @@ namespace WpfNotePad
                 outputStream.Write(txtAantalKarakters.Text);
                 outputStream.Close();
                 txtAantalKarakters.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Het bestand werd niet bewaard");
+
             }
         }
 
@@ -155,12 +184,13 @@ namespace WpfNotePad
 
         private void Cut_Click(object sender, RoutedEventArgs e)
         {
-            txtAantalKarakters.Cut();
-            Clipboard.SetText(txtAantalKarakters.SelectedText);
+            Clipboard.SetText(txtAantalKarakters.Text);
+            if (txtAantalKarakters.SelectedText != "")
 
-            if (txtAantalKarakters.SelectedText != "" )
+           // if (txtAantalKarakters.SelectionLength > 0)
             {
-                Cut.IsEnabled = true;
+                Paste.IsEnabled = false;
+                txtAantalKarakters.Cut();
             }
             else
             {
@@ -172,16 +202,17 @@ namespace WpfNotePad
 
         private void Copy_Click(object sender, RoutedEventArgs e)
         {
-            txtAantalKarakters.Copy();
-            Clipboard.SetText(txtAantalKarakters.SelectedText);
-            if (txtAantalKarakters.SelectionLength > 0)
+            Clipboard.SetText(txtAantalKarakters.Text);
+            if (txtAantalKarakters.SelectedText != "")
             {
                 Copy.IsEnabled = true;
+                 txtAantalKarakters.Copy();
             }
             else
             {
                 Copy.IsEnabled = false;
             }
+
         }
 
         private void Paste_Click(object sender, RoutedEventArgs e)
@@ -197,6 +228,7 @@ namespace WpfNotePad
             {
                 Paste.IsEnabled = false;
             }
+
         }
 
 
