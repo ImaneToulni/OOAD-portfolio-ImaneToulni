@@ -6,18 +6,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="aluminiumVelgen.jpg" />
-    <None Remove="audioSpeaker.jpg" />
-    <None Remove="auto1.jpg" />
-    <None Remove="deluxeMatjes.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="aluminiumVelgen.jpg" />
-    <Resource Include="audioSpeaker.jpg" />
-    <Resource Include="auto1.jpg" />
-    <Resource Include="deluxeMatjes.jpg" />
-  </ItemGroup>
-
 </Project>
