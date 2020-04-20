@@ -1,0 +1,17 @@
+C:\Users\Imane\source\repos\WPFEscapeRoom\bin\Debug\netcoreapp3.1\WPFEscapeRoom.exe
+C:\Users\Imane\source\repos\WPFEscapeRoom\bin\Debug\netcoreapp3.1\WPFEscapeRoom.deps.json
+C:\Users\Imane\source\repos\WPFEscapeRoom\bin\Debug\netcoreapp3.1\WPFEscapeRoom.runtimeconfig.json
+C:\Users\Imane\source\repos\WPFEscapeRoom\bin\Debug\netcoreapp3.1\WPFEscapeRoom.runtimeconfig.dev.json
+C:\Users\Imane\source\repos\WPFEscapeRoom\bin\Debug\netcoreapp3.1\WPFEscapeRoom.dll
+C:\Users\Imane\source\repos\WPFEscapeRoom\bin\Debug\netcoreapp3.1\WPFEscapeRoom.pdb
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\WPFEscapeRoom.csprojAssemblyReference.cache
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\WPFEscapeRoom_MarkupCompile.cache
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\WPFEscapeRoom_MarkupCompile.lref
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\WPFEscapeRoom.g.resources
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\WPFEscapeRoom.AssemblyInfoInputs.cache
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\WPFEscapeRoom.AssemblyInfo.cs
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\WPFEscapeRoom.dll
+C:\Users\Imane\source\repos\WPFEscapeRoom\obj\Debug\netcoreapp3.1\WPFEscapeRoom.pdb
