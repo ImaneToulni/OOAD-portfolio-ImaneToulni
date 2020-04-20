@@ -1,0 +1,17 @@
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\bin\Debug\netcoreapp3.1\WpfBanking.exe
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\bin\Debug\netcoreapp3.1\WpfBanking.deps.json
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\bin\Debug\netcoreapp3.1\WpfBanking.runtimeconfig.json
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\bin\Debug\netcoreapp3.1\WpfBanking.runtimeconfig.dev.json
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\bin\Debug\netcoreapp3.1\WpfBanking.dll
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\bin\Debug\netcoreapp3.1\WpfBanking.pdb
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\WpfBanking.csprojAssemblyReference.cache
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\WpfBanking_MarkupCompile.cache
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\WpfBanking_MarkupCompile.lref
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\WpfBanking.g.resources
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\WpfBanking.AssemblyInfoInputs.cache
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\WpfBanking.AssemblyInfo.cs
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\WpfBanking.dll
+C:\Users\Imane\source\repos\SolutionLes6\WpfBanking\obj\Debug\netcoreapp3.1\WpfBanking.pdb
