@@ -1,0 +1,6 @@
+C:\Users\Imane\Desktop\SolutionLes7\KassaTicket\obj\Debug\KassaTicket.csprojAssemblyReference.cache
+C:\Users\Imane\Desktop\SolutionLes7\KassaTicket\bin\Debug\KassaTicket.exe.config
+C:\Users\Imane\Desktop\SolutionLes7\KassaTicket\bin\Debug\KassaTicket.exe
+C:\Users\Imane\Desktop\SolutionLes7\KassaTicket\bin\Debug\KassaTicket.pdb
+C:\Users\Imane\Desktop\SolutionLes7\KassaTicket\obj\Debug\KassaTicket.exe
+C:\Users\Imane\Desktop\SolutionLes7\KassaTicket\obj\Debug\KassaTicket.pdb
