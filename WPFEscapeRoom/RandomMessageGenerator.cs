@@ -42,7 +42,7 @@ namespace WPFEscapeRoom
             int i = rnd.Next(0, locked.Length);
             return locked[i];
         }
-
+        // static = bestaat enkel uit static members, maar mag ook zonder static
         public static string RandomMessage(MessageType m)
         {
             switch (m)

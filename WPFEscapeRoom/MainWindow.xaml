@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFEscapeRoom"
         mc:Ignorable="d"
-        Title="EscapeRoom" Height="450" Width="800">
+        Title="EscapeRoom" Height="600" Width="800">
     <Grid>
         <TextBlock x:Name="txtRoomDesc" Padding="10,10,10,10" HorizontalAlignment="Left" Height="63" Margin="24,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="743" FontSize="16" Background="#FFF9F5F5"/>
         <Label x:Name="lblMessage" Padding="10,10,10,10" Content="" HorizontalAlignment="Left" Height="45" Margin="24,85,0,0" VerticalAlignment="Top" Width="743" Background="#FFF9F5F5" FontSize="16" Foreground="#FF000099"/>
@@ -18,5 +18,10 @@
         <ListBox x:Name="lstRoomItems" HorizontalAlignment="Left" Height="155" Margin="24,176,0,0" VerticalAlignment="Top" Width="234"  SelectionChanged="LstItems_SelectionChanged"/>
         <Label Content="Picked up items" HorizontalAlignment="Left" Height="26" Margin="528,150,0,0" VerticalAlignment="Top" Width="112"/>
         <ListBox x:Name="lstMyItems" HorizontalAlignment="Left" Height="155" Margin="528,176,0,0" VerticalAlignment="Top" Width="239" SelectionChanged="LstItems_SelectionChanged" />
+        <Label Content="Room doors" HorizontalAlignment="Left" Height="26" Margin="25,351,0,0" VerticalAlignment="Top" Width="112"/>
+        <ListBox x:Name="lstRoomDoor" HorizontalAlignment="Left" Height="155" Margin="27,379,0,0" VerticalAlignment="Top" Width="234"  SelectionChanged="LstItems_SelectionChanged"/>
+        <Button x:Name="btnOpenWith" Content="&lt;- OPEN WITH -&gt;" HorizontalAlignment="Center" Height="36" Margin="0,404,0,0" VerticalAlignment="Top" Width="162" IsEnabled="False" Click="BtnUseOn_Click"/>
+        <Button x:Name="btnEnter" Content="&lt;- ENTER" HorizontalAlignment="Center" Height="35" Margin="0,448,0,0" VerticalAlignment="Top" Width="162" IsEnabled="False" Click="BtnUseOn_Click"/>
+        <Image HorizontalAlignment="Left" Height="155" Margin="527,374,0,0" VerticalAlignment="Top" Width="239" Source="img/ss-bedroom.png" Stretch="Fill"/>
     </Grid>
 </Window>

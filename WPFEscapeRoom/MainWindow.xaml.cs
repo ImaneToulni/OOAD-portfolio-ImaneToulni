@@ -29,7 +29,15 @@ namespace WPFEscapeRoom
 
             // define room
             Room room1 = new Room( "bedroom", "I seem to be in a medium sized bedroom. There is a locker to the left, a nice rug on the  floor, and a bed to the right. ");
-            
+            Room room2 = new Room("living room", "bla-bla-bla");
+            Room room3 = new Room("computer room", "bla-bla-bla");
+
+
+            // define doors
+            Door door1 = new Door();
+
+
+
             // define items
             Item key1 = new Item( "small silver key", "A small silver key, makes me think of one I had at highschool. " );
             Item key2 = new Item("large key", "A large key. Could this be my way out? ");
@@ -55,6 +63,18 @@ namespace WPFEscapeRoom
             room1.Items.Add(locker);
             room1.Items.Add(new Item("chair", "Just a chair. No time to rest.", false));
             room1.Items.Add(new Item("poster", "A poster of a sunny beach. I wish I was there right now.", true));
+
+            room2.Items.Add(new Item("Clock", "Just a simple clock"));
+            room2.Items.Add(new Item("Plant", "Just a big plant"));
+            room2.Items.Add(new Item("Sofa", "hmm... I am not tired. I won't sit down yet"));
+            room2.Items.Add(new Item("Painting", "A painting of a building"));
+
+            room3.Items.Add(new Item("Keyboard", "Is this my way out?"));
+            room3.Items.Add(new Item("Computer screen", "Black screen, the computer is turned off"));
+            room3.Items.Add(new Item("portrait", "Portrait of John Doe"));
+            room3.Items.Add(new Item("Keyboard", "A simple keyboard of the 90's"));
+
+            
 
             // start game
             currentRoom = room1;
@@ -116,6 +136,7 @@ namespace WPFEscapeRoom
             // 1. find both items
             Item myItem = (Item)lstMyItems.SelectedItem;
             Item roomItem = (Item)lstRoomItems.SelectedItem;
+
             // 2. item doesn't fit
             if (roomItem.Key != myItem)
             {
@@ -132,7 +153,6 @@ namespace WPFEscapeRoom
         }
         private void BtnPickUp_Click(object sender, RoutedEventArgs e)
         {
-            // 1. find selected item
             Item selItem = (Item)lstRoomItems.SelectedItem;
 
             if (selItem.IsPortable == true){ // diegene die boven niet draagbaar zijn, krijgen de eerste melding
@@ -143,8 +163,6 @@ namespace WPFEscapeRoom
                 lblMessage.Content = "I just picked up the " + selItem.Name + ". ";
             }
 
-
-            // 2. add item to your items list
             lstMyItems.Items.Add(selItem);
             lstRoomItems.Items.Remove(selItem);
             currentRoom.Items.Remove(selItem);
@@ -159,8 +177,5 @@ namespace WPFEscapeRoom
             lstRoomItems.Items.Add(myItem);
             lstMyItems.Items.Remove(myItem);
         }
-
-        
-
     }
 }
