@@ -18,11 +18,12 @@ namespace WPFEscapeRoom
             Description = desc;
         }
         // Constructor met 3 parameters
-        public Item(string name, string desc, bool IsPortable)
+        public Item(string name, string desc, bool isPort) : this(name, desc)
         {
-            Name = name;
-            Description = desc;
-            IsPortable = false;
+            IsPortable = isPort;
+            //Name = name;
+            //Description = desc;
+
         }
         // overerving met ToString
         public override string ToString()

@@ -21,8 +21,7 @@ namespace WPFEscapeRoom
     public partial class MainWindow : Window
     {
         Room currentRoom; // will become useful in later versions
-        public enum MessageType { message1, message2, message3  }
-
+        public enum Betaalwijze { Visa, Cash, Bancontact  }
 
         public MainWindow()
         {
@@ -45,19 +44,17 @@ namespace WPFEscapeRoom
             bed.IsPortable = true;
             bed.HiddenItem = key1;
 
-            Item chair = new Item("chair", "Just a chair. I won't sit down right now. ");
-            chair.IsPortable = true;
-            chair.HiddenItem = key1;
+            Item chair = new Item("chair", "Just a chair. No time to rest.", false);
 
-            Item poster = new Item("poster", "This is a poster, There is nothing on it. ");
-            poster.HiddenItem = key1;
+            Item poster = new Item("poster", "A poster of a sunny beach. I wish I was there right now.", true);
+          
 
             // setup bedroom
             room1.Items.Add(new Item( "floor mat", "A bit ragged floor mat, but still one of the most popular designs. " ));
             room1.Items.Add(bed);
             room1.Items.Add(locker);
-            room1.Items.Add(chair);
-            room1.Items.Add(poster);
+            room1.Items.Add(new Item("chair", "Just a chair. No time to rest.", false));
+            room1.Items.Add(new Item("poster", "A poster of a sunny beach. I wish I was there right now.", true));
 
             // start game
             currentRoom = room1;
@@ -65,10 +62,8 @@ namespace WPFEscapeRoom
             txtRoomDesc.Text = currentRoom.Description;
             UpdateUI();
 
-            MessageType rndm = MessageType.message1;
-            Console.WriteLine(rndm);
-
         }
+
 
         // =====================
         // Update de items in de ListBoxes
@@ -81,7 +76,6 @@ namespace WPFEscapeRoom
                 lstRoomItems.Items.Add(itm);
             }
         }
-
         private void LstItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             btnCheck.IsEnabled = lstRoomItems.SelectedValue != null; // room item selected
@@ -117,7 +111,6 @@ namespace WPFEscapeRoom
             lblMessage.Content = roomItem.Description;
 
         }
-
         private void BtnUseOn_Click(object sender, RoutedEventArgs e)
         {
             // 1. find both items
@@ -133,13 +126,15 @@ namespace WPFEscapeRoom
             roomItem.IsLocked = false;
             roomItem.Key = null;
             lstMyItems.Items.Remove(myItem);
+
+
             lblMessage.Content = "I just unlocked the " + roomItem.Name + "! ";
         }
-
         private void BtnPickUp_Click(object sender, RoutedEventArgs e)
         {
             // 1. find selected item
             Item selItem = (Item)lstRoomItems.SelectedItem;
+
             if (selItem.IsPortable == true){ // diegene die boven niet draagbaar zijn, krijgen de eerste melding
                 lblMessage.Content = "I can't pick up the " + selItem.Name + ".";
             }
@@ -147,21 +142,22 @@ namespace WPFEscapeRoom
             {
                 lblMessage.Content = "I just picked up the " + selItem.Name + ". ";
             }
+
+
             // 2. add item to your items list
             lstMyItems.Items.Add(selItem);
             lstRoomItems.Items.Remove(selItem);
             currentRoom.Items.Remove(selItem);
 
         }
-
         private void BtnDrop_Click(object sender, RoutedEventArgs e)
         {
             // 1. find selected item 
-            Item selItem = (Item)lstMyItems.SelectedItem; // rechter listbox 
+            Item myItem = (Item)lstMyItems.SelectedItem; // rechter listbox 
             // 2. add item to yout items list
-            lblMessage.Content = "I just dropped the " + selItem.Name + " .";
-            lstRoomItems.Items.Add(selItem);
-            lstMyItems.Items.Remove(selItem);
+            lblMessage.Content = "I just dropped the " + myItem.Name + " .";
+            lstRoomItems.Items.Add(myItem);
+            lstMyItems.Items.Remove(myItem);
         }
 
         
